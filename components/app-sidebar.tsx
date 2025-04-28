@@ -46,74 +46,27 @@ const data = {
       icon: IconDashboard,
     },
     {
-      title: "Lifecycle",
+      title: "Table",
       url: "#",
       icon: IconListDetails,
     },
     {
-      title: "Analytics",
+      title: "Data Calculation",
       url: "#",
       icon: IconChartBar,
     },
     {
-      title: "Projects",
+      title: "AI Chat",
+      url: "#",
+      icon: IconFileAi,
+    },
+    {
+      title: "File Upload",
       url: "#",
       icon: IconFolder,
     },
-    {
-      title: "Team",
-      url: "#",
-      icon: IconUsers,
-    },
   ],
-  navClouds: [
-    {
-      title: "Capture",
-      icon: IconCamera,
-      isActive: true,
-      url: "#",
-      items: [
-        {
-          title: "Active Proposals",
-          url: "#",
-        },
-        {
-          title: "Archived",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "Proposal",
-      icon: IconFileDescription,
-      url: "#",
-      items: [
-        {
-          title: "Active Proposals",
-          url: "#",
-        },
-        {
-          title: "Archived",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "Prompts",
-      icon: IconFileAi,
-      url: "#",
-      items: [
-        {
-          title: "Active Proposals",
-          url: "#",
-        },
-        {
-          title: "Archived",
-          url: "#",
-        },
-      ],
-    },
-  ],
+  navClouds: [], // 今回 navClouds は使わないので空にする
   navSecondary: [
     {
       title: "Settings",
@@ -131,23 +84,7 @@ const data = {
       icon: IconSearch,
     },
   ],
-  documents: [
-    {
-      name: "Data Library",
-      url: "#",
-      icon: IconDatabase,
-    },
-    {
-      name: "Reports",
-      url: "#",
-      icon: IconReport,
-    },
-    {
-      name: "Word Assistant",
-      url: "#",
-      icon: IconFileWord,
-    },
-  ],
+  documents: [],
 }
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
